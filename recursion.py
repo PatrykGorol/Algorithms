@@ -24,12 +24,6 @@ def look_for_a_key_recursively(main_box: list) -> None:
     return None
 
 
-def factorial_recursively(num: int) -> int:
-    if num == 1:
-        return 1
-    return num * factorial_recursively(num - 1)
-
-
 if __name__ == '__main__':
     s1 = ['doll', 'pony']
     s2 = ['key', 'treasure map']
@@ -47,5 +41,3 @@ if __name__ == '__main__':
 
     look_for_a_key(main_box)
     look_for_a_key_recursively(main_box)
-
-    print(factorial_recursively(5))

@@ -1,7 +1,7 @@
 import functools
 
 
-def euclidean_algoritm(a: int, b: int) -> int:
+def euclidean_algorithm(a: int, b: int) -> int:
     '''
     Finds greatest common divisor of two numbers.
     :param a: integer number
@@ -14,7 +14,7 @@ def euclidean_algoritm(a: int, b: int) -> int:
 
 
 def print_gcd(*nums: int) -> None:
-    d = functools.reduce(lambda a, b: euclidean_algoritm(a, b), nums)
+    d = functools.reduce(lambda a, b: euclidean_algorithm(a, b), nums)
     print(f'gcd({", ".join(str(num) for num in nums)}) = {d}')
     return None
 
